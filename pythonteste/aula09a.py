@@ -30,5 +30,28 @@ print('-'*13)
 print('{}'.format('Transformação'))
 print('-'*13)
 print(frase.replace('Python','Android'))
+print(frase.upper())
+print(frase.lower())
+print(frase.capitalize())
+print(frase.title())
+
+frase = '   Aprenda Python  '
+
+print()
+print(frase)
+print(frase.strip())
+print(frase.rstrip())
+print(frase.lstrip())
+print()
+
+frase = 'Curso em vídeo Python'
+print('-'*13)
+print('{:^13}'.format('Divisão'))
+print('-'*13)
+print(frase.split())
+print('-'.join(frase))
+
+print('''Olá, escrevendo 3 aspas eu posso digitar um texto longo e posso pular a linha
+viu? sem ter que colocar outro print''')
 
 print()
