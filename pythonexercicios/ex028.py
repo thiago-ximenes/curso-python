@@ -1,8 +1,10 @@
-import random
+from random import randint
 import emoji
-n = random.randint(0,5)
+n = randint(0,5) # o computador seleciona
+print('-_-'*20)
 resp = int(input('TENTE ACERTAR O QUE O COMPUTADOR PENSOU!\n Digite um número entre 0 e 5: '))
+print('-_-'*20)
 if n == resp:
-    print('TEMOS UM VENCEDOR!!!')
+    print(emoji.emojize('TEMOS UM VENCEDOR!!! :gem:', use_aliases=True))
 else:
-    print(emoji.emojize('IHHHHH :confounded: ! TENTE NOVAMENTE!',use_aliases=True))
+    print(emoji.emojize('IHHHHH o computador pensou no {} :confounded: ! TENTE NOVAMENTE!'.format(n),use_aliases=True))
