@@ -1,0 +1,1 @@
+print('\n\n\033[7;37;40mHello World!\033[m\n\n')
