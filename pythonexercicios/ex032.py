@@ -1,10 +1,9 @@
 import emoji
-ano = int(input('Digite um ano qualquer: '))
-if ano % 4 == 0:
-    if ano % 100 != 0:
-        print(emoji.emojize('O ano de {} é BISSESTO! :clap:'.format(ano), use_aliases=True))
+from datetime import date
+ano = int(input('Digite um ano qualquer, digite 0 para o ano atual: '))
+if ano == 0:
+    ano = date.today().year
+if ano % 4 == 0 and ano % 100 != 0 or ano % 400 ==0:
+    print(emoji.emojize('O ano de {} é BISSESTO!:clap:'.format(ano), use_aliases=True))
 else:
-    if ano % 400 == 0:
-        print(emoji.emojize('O ano de {} é BISSESTO! :clap:'.format(ano), use_aliases=True))
-    else:
-        print('Ano NÃO BISSESTO!')
+    print('Ano NÃO BISSESTO!')
