@@ -1,5 +1,5 @@
 from random import randint
-
+from time import sleep
 print('~'*33)
 print('\033[7mVAMOS JOGAR PEDRA, PAPEL E TESOURA\033[m')
 print('~'*33)
@@ -10,6 +10,12 @@ p = int(input('''Escolha um número para:
 [1] PAPEL
 [2] TESOURA
 Sua escolha: '''))
+print('JO')
+sleep(0.5)
+print('KEN')
+sleep(0.5)
+print('PO')
+sleep(0.5)
 if p > 2 or p < 0:
     print('\033[45;30mJOGADA INVÁLIDA! TENTE NOVAMENTE\033[m')
 else:
