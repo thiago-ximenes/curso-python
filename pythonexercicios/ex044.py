@@ -11,7 +11,7 @@ if fp == 1:
 elif fp == 2:
     print('Opção [2] selecionada, o valor final é R$ {:.2f}'.format(p - (p * 5 /100)))
 elif fp == 3:
-    print('Opção [3] selecionada, o valor final é R$ {:.2f}'.format(p))
+    print('Opção [3] selecionada, são 2 parcelas de R$ {:.2f}, o valor final é R$ {:.2f}'.format(p/2, p))
 elif fp == 4:
     x = int(input('Quantas vezes?: '))
     print('Opção [4] selecionada, serão {} parcelas de R$ {:.2f},o valor final é R$ {:.2f}'.format(x, (p + (p * 20 / 100)) / x, p + (p * 20 / 100)))
