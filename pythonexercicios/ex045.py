@@ -11,11 +11,11 @@ p = int(input('''Escolha um número para:
 [2] TESOURA
 Sua escolha: '''))
 print('JO')
-sleep(0.5)
+sleep(1)
 print('KEN')
-sleep(0.5)
+sleep(1)
 print('PO')
-sleep(0.5)
+sleep(1)
 if p > 2 or p < 0:
     print('\033[45;30mJOGADA INVÁLIDA! TENTE NOVAMENTE\033[m')
 else:
