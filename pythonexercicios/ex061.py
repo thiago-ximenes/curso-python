@@ -4,12 +4,12 @@ print('<><><><><><><><><><><><>')
 i = int(input('Digite o primeiro termo da P.A. : '))
 r = int(input('Digite a razão da P.A. : '))
 c = 1
-while c != 11:
-    if c == 1:
-        print('{} → '.format(i), end='')
-    elif 1 < c < 10:
-        print('{} → '.format(i + r * (c-1)), end='')
+t = i
+while c <= 10:
+    if c < 10:
+        print('{} → '.format(t), end='')
     else:
-        print(i + r * (c - 1))
+        print(t)
     c += 1
-    
+    t += r
+
