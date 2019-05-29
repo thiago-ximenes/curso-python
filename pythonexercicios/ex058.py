@@ -1,6 +1,6 @@
-from random import randint
 import emoji
 from time import sleep
+from random import randint
 n = randint(0,10) # o computador seleciona um número entre 0 e 5
 print('-_-'*20)
 resp = ''
