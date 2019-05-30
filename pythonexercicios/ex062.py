@@ -6,7 +6,7 @@ r = int(input('Digite a razão da P.A. : '))
 c = 1
 t = i
 d = 10
-counter = 0
+counter = d
 answer = False
 while answer is False:
     while c <= d:
@@ -21,7 +21,8 @@ while answer is False:
     counter += d
     if d == 0:
         answer = True
-print()
+print('Finished! It was showed {} terms of an A.P.'.format(counter))
+print('Thanks, good bye!')
 
             
         
