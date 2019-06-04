@@ -7,9 +7,10 @@ print(f'Você digitou os valores {tupla}')
 print(f'O valor 9 aparece {tupla.count(9)} vezes.')
 print(f'O primeiro valor 3 está na posição {tupla.index(3)+1}' if 3 in tupla else 'O valor 3 aparece nenhuma vez.')
 print('Os números pares foram ', end='')
-for c in tupla:
+for pos, c in enumerate(tupla):
     if c % 2 == 0:
         print(c, end=' ')
+        
 print('\n')
         
 
