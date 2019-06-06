@@ -10,7 +10,6 @@ for i in expr:
             p.append(i)
             break
 if len(p) == 0:
-    print('Sua expressão está certa.')
+    print('Expressão válida.')
 else:
-    print('Sua expressão está incorreta.')
-print(p)
+    print('Expressão inválida.')
