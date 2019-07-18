@@ -1,26 +1,26 @@
-def aumentar(preço = 0, porcento = 0, formato = True):
+def aumentar(preço=0, porcento=0, formato=True):
     res = preço + preço * (porcento / 100)
     return res if not moeda else moeda(res)
 
 
-def diminuir(preço = 0, porcento = 0, formato = True):
+def diminuir(preço=0, porcento=0, formato=True):
     res = preço - preço * (porcento / 100)
     return res if not moeda else moeda(res)
 
 
-def dobro(preço = 0, formato = True):
+def dobro(preço=0, formato=True):
     res = preço * 2
     return res if not moeda else moeda(res)
 
 
-def metade(preço = 0, formato = True):
+def metade(preço=0, formato=True):
     res = preço / 2
     return res if not moeda else moeda(res)
 
 
-def moeda(preço = 0, moeda='R$'):
+def moeda(preço=0, moeda='R$'):
     return f'{moeda} {preço:.2f}'.replace('.', ',')
-    
+
 
 def resumo(preço=0, redução=0, aumento=0):
     print('-' * 35)
@@ -32,5 +32,3 @@ def resumo(preço=0, redução=0, aumento=0):
     print(f'{f"Aumento de {aumento}%: ":<25}{aumentar(preço, aumento):<15}')
     print(f'{f"Redução de {redução}%: ":<25}{diminuir(preço, redução):<15}')
     print('-' * 35)
-    
-
