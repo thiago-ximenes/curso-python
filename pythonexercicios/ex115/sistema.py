@@ -1,3 +1,6 @@
 from bib.interface import *
 
-cabeçalho('Sistema v1.0')
+while True:
+    resposta = menu(['ver pessoas cadastradas', 'Cadastrar  nova Pessoa', 'Sair do Sistema'])
+    if resposta == 1:
+        cabeçalho
