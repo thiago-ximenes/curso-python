@@ -10,7 +10,7 @@ def arquivoExiste(nome):
     else:
         return True
 
-def CriarAquivo(nome):
+def criarAquivo(nome):
     try:
         a = open(nome, 'wt+')
         a.close()
@@ -20,7 +20,7 @@ def CriarAquivo(nome):
         print(f'Arquivo {nome} criado com sucesso!')
 
 
-def LeiaArquivo(nome):
+def lerArquivo(nome):
     try:
         a = open(nome, 'rt')
     except:
@@ -28,3 +28,6 @@ def LeiaArquivo(nome):
     else:
         cabeçalho('PESSOAS CADASTRADAS')
         print(a.readlines())
+
+
+def cadastrar(arq, nome='desconhecido', idade=0)
