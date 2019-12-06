@@ -5,4 +5,4 @@ try:
 except:
     print('\033[31mO site PUDIM.COM.BR não está acessível no momento.\033[m')
 else:
-    print('\033[32mO site PUDIM.COM.BR está acessível neste momento.\033[m')
+    print('\033[34mO site PUDIM.COM.BR está acessível neste momento.\033[m')
