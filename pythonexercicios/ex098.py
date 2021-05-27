@@ -7,6 +7,8 @@ def contador(inicio, fim, passo):
     print('-=' * 30)
     if passo == 0:
         passo = 1
+    elif passo < 0:
+            passo *= -1
     print(f'Contagem de {inicio} até {fim} de {passo} em {passo}:')
     if inicio > fim:
         passo *= -1

@@ -50,7 +50,7 @@ contador(2, 1, 7)
 contador(8, 0)
 contador(4, 4, 7, 6, 2)'''
 
-'''def dobra(lst):
+def dobra(lst):
     for pos in range(len(lst)):
         lst[pos] *= 2
         
@@ -59,11 +59,11 @@ contador(4, 4, 7, 6, 2)'''
 valores = [7, 2, 5, 0, 4]
 dobra(valores)
 print(valores)
-'''
-def soma(*valores):
+
+'''def soma(*valores):
     print(f'Somando os valores {valores} temos a soma {sum(valores)}')
 
 
 
 soma(5, 2)
-soma(2, 9, 4)
+soma(2, 9, 4)'''

@@ -1,4 +1,4 @@
-try:
+'''try:
     a = int(input('Numerador: '))
     b = int(input('Denominador: '))
     r = a / b
@@ -13,4 +13,8 @@ except Exception as erro:
 else:
     print(f'O resultado da divisão é {r:.1f}')
 finally:
-    print('Volte sempre, obrigado!')
+    print('Volte sempre, obrigado!')'''
+
+num = [6, 2, 1, 4, 3]
+
+print(sorted(num, reverse=True))

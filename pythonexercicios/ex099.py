@@ -10,7 +10,7 @@ def maior(*lista):
     print('-' * 30)
     print('Analisando os valores passados...')
     for c in lista:
-        print(c, end=' ', flush=True)
+        print(c, end=' ', flush=True) #flush serve para que o print das informações apareça de forma pausada item por item
         sleep(0.5)
     m = 0
     for c in lista:
